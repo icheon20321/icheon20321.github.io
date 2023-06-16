@@ -4,7 +4,7 @@
 
 
 
-    <title>My test page</title>
+    My test page
 
   </head>
   
