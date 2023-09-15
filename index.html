@@ -10,9 +10,9 @@
 <body>
 <form name="f">
     <select>
-        <option value="naver">네이버</option>
+
         <option value="google">구글</option>       
-        <option value="youtube">유튜브</option>
+
     </select>
     <input type="search" name="q">
     <input type="submit" value="검색">
@@ -30,13 +30,9 @@ document.addEventListener('DOMContentLoaded', function(){
             q.focus();             
         } else {
             var select = f.getElementsByTagName('select')[0];
-            if(select.selectedIndex == 0){
-                window.open('https://search.naver.com/search.naver?ie=utf8&where=nexearch&query=' + encodeURIComponent(q.value));
-            } else if(select.selectedIndex == 1) {    
+           if(select.selectedIndex == 1) {    
                 window.open('https://www.google.com/search?q=' + encodeURIComponent(q.value));
-            } else {
-                window.open('https://www.youtube.com/results?search_query=' + encodeURIComponent(q.value));
-            }   
+            } 
         }         
     });
 });
